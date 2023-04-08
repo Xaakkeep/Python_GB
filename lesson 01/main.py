@@ -9,7 +9,10 @@ def main():
         task_02.task()
     elif task_input == 4:
         task_04.task()
-        
+    elif task_input == 6:
+        task_06.task()
+    elif task_input == 8:
+        task_08.task()        
 
 
 if __name__ in "__main__":
