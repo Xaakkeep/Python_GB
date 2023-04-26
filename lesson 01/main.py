@@ -15,5 +15,5 @@ def main():
         task_08.task()        
 
 
-if __name__ in "__main__":
+if __name__ == "__main__":
     main()
