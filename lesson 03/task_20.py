@@ -26,8 +26,46 @@
 
 def task():
     print("Задача 20")
-    text = input("Введите слово: ")
-    symbol_en = {}
-    print(type(symbol_en))
     
-task()
+    text = input("Введите слово: ")
+    
+    en = 'qwertyuiopasdfghjklzxcvbnm'
+
+    
+    symbol_en = {
+        1 : 'AEIOULNSTR',
+        2 : 'DG',
+        3 : 'BCMP',
+        4 : 'FHVWY',
+        5 : 'K',
+        8 : 'JX',
+        10 : 'QZ'
+    }
+    
+    symbol_ru = {
+        1 : 'АВЕИНОРСТ',
+        2 : 'ДКЛМПУ',
+        3 : 'БГЁЬЯ',
+        4 : 'ЙЫ',
+        5 : 'ЖЗХЦЧ',
+        8 : 'ШЭЮ',
+        10 : 'ФШЪ'
+    }
+    
+    summa = 0
+    
+    if text[0].lower() in en:
+        for i in text:
+            for key, value in symbol_en.items():
+                if i.upper() in value:
+                    summa += key
+    else:
+        for i in text:
+            for key, value in symbol_ru.items():
+                if i.upper() in value:
+                    summa += key
+    print(f'Цена слова "{text}" = {summa}')
+        
+    
+        
+    

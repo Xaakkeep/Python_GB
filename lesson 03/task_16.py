@@ -19,11 +19,10 @@ def task():
     list_mass = []
     count_num = 0
     for i in range(N):
-        list_mass.append(random.randint(1, N))
+        list_mass.append(random.randint(1, 10))
         
     for j in list_mass:
         if j == X:
             count_num +=1
     print(f'Массив = {list_mass}\nИскомое число = {X}\nКоличество элементов числа -> {count_num}')
     
-task()
